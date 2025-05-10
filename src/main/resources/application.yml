@@ -2,10 +2,12 @@ server:
   port: 8088
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/bookviews?useSSL=false&serverTimezone=UTC
+#    url: jdbc:mysql://localhost:3306/bookviews?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://root:RxiTPMhBXbAQeeCoCuOSGxdOpdiOUJXU@trolley.proxy.rlwy.net:54517/railway
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password:
+#    password:
+    password: RxiTPMhBXbAQeeCoCuOSGxdOpdiOUJXU
   jpa:
     show-sql: true
     hibernate:
