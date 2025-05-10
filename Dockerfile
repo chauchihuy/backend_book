@@ -6,5 +6,5 @@ RUN mvn clean package -DskipTests
 # Run stage
 FROM amazoncorretto:17-alpine3.17
 COPY --from=build /target/shopapp-0.0.1-SNAPSHOT.jar shopapp.jar
-EXPOSE 8088
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","shopapp.jar"]
